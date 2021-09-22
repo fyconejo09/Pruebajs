@@ -11,6 +11,8 @@
 		<link href="CSS/employees.css" rel="stylesheet" type="text/css" />
 		<link rel="preload" href="CSS/estilos.css" as="style">
 		<link href="CSS/estilos.css" rel="stylesheet" type="text/css" />
+		<link rel="preload" href="CSS/normalize.css" as="style">
+		<link href="CSS/normalize.css" rel="stylesheet" type="text/css" />
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap"
      rel="stylesheet">
@@ -23,7 +25,7 @@
 
 		<header>
 
-			<img align="left" height="60" src="https://drive.google.com/uc?	export=view&amp;id=1nR8PqScd_BmUc_WjFsh4VdrcA1UYxQ0Y" width="60" />
+			<img id="logo" align="left" height="80" src="https://drive.google.com/uc?	export=view&amp;id=1nR8PqScd_BmUc_WjFsh4VdrcA1UYxQ0Y" width="80" />
 			<input type="checkbox" id="btn-menu">
 			<label for="btn-menu"><span class="material-icons">menu_open</span>Menu</label>
 
@@ -42,49 +44,176 @@
     		</div>
 
 		</div>
-
-
-
-		<nav class="menu">
-		<div class="lo_bottom-strip">
-    		<div>
-    			<ul>
-						<li><a href="../Constructora-Herrera/01-Acarreos/Acarreos-Menu.html">Acarreos</a></li>
-						<li><a href="../Constructora-Herrera/02-Planteles/Planteles-Menu.html">Planteles</a></li>
-						<li><a href="../Constructora-Herrera/03-Asfalto/Asfalto-Menu.html">Asfalto</a></li>
-						<li><a href="../Constructora-Herrera/04-Agregados/Formularios/Produccion Agregados.html">Agregados</a></li>
-						<li><a href="../Constructora-Herrera/05-Concreto/Concreto-Menu.html">Concreto</a></li>
-						<li><a href="../Constructora-Herrera/06-Logistica/Formularios/Logistica.html">Logistica</a></li>
-						<li><a href="../Constructora-Herrera/07-Taller/Reportes/R-Control Herreramientas.html">Taller</a>
-						<li><a href="../Constructora-Herrera/08-Configuraciones/Configuraciones-Menu.html">Configuraciones</a>
-						<li><a href="#"><span class="material-icons">chevron_right</span></a></li>
-	     		</ul>
-	    	</div>
-		</div>
-	</nav>
 		</header>
 
-
-		<div id="contentinframe1" >
-			<!-- Caspio Deployed Code Start Here || CM - Employees/Employees Report  -->
-			<iframe  height="1000" width="1000" src="https://www.youtube.com/embed/Z1D3gPpsNAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			<!-- Caspio Deployed Code End Here -->
-
-
-			<!-- Smartsupp Live Chat script -->
-			<script type="text/javascript">
-			var _smartsupp = _smartsupp || {};
-			_smartsupp.key = '001144f8fb9bf88b53c4810a2a1dcd28666b06b1';
-			window.smartsupp||(function(d) {
-			  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-			  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-			  c.type='text/javascript';c.charset='utf-8';c.async=true;
-			  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-			})(document);
-			</script>
-
-
+		<div class="lo_bottom-strip">
+			<div class="lo_bottom-info">
+				<h1>Plataforma de Gestión de Inventarios y Acarreos</h1>
+			</div>
+			
+			
+				
 		</div>
+
+		<main class="principal">
+			<section class="contenedor_menu">
+				<div class="container">
+					<div class="card">
+					  <div class="titulo_menu">
+						<h3>Menú </h3>
+					  </div>
+					  <div class="cuerpo_menu">
+						<ul>
+							<li><a href="#">Acarreos</a>
+								<ul>
+									<li><i></i><a href="#">Formularios</a>
+										<ul>
+											<li><i></i><a href="../01-Acarreos/Formularios/Consumo Diesel.html">Consumo Diesel</a></li>
+											<li><i></i><a href="../01-Acarreos/Formularios/Control de Lastre.html">Control de Lastre</a></li>
+											<li><i></i><a href="../01-Acarreos/Formularios/Traslados a Proyectos.html">Traslados a Proyectos</a></li>
+											<li><i></i><a href="../01-Acarreos/Formularios/Facturacion Acarreos.html">Facturacion</a></li>
+										</ul>
+									</li>
+									<li><i></i><a href="#">Reportes</a>
+										<ul>
+											<li><i></i><a href="../01-Acarreos/Reportes/R-Consumo Diesel.html">Consumo Diesel</a></li>
+											<li><i></i><a href="../01-Acarreos/Reportes/R-Control de Lastre.html">Control de Lastre</a></li>
+											<li><i></i><a href="../01-Acarreos/Reportes/R-Traslados a Proyectos.html">Traslados a Proyectos</a></li>
+										</ul>
+									</li>
+								</ul>	
+							</li>
+
+							<li><a href="#">Planteles</a>
+								<ul>
+									<li><i></i><a href="#">Formularios</a>		
+										<ul>
+											<li><i></i><a href="../02-Planteles/Formularios/Control de Lastre.html">Control de Lastre</a></li>
+											<li><i></i><a href="../02-Planteles/Formularios/Traslado Planteles.html">Traslado Planteles</a></li>
+											<li><i></i><a href="../02-Planteles/Formularios/Traslados a Proyectos.html">Traslados a Proyectos</a></li>
+										</ul>
+									</li>
+									<li><i></i><a href="#">Reportes</a>
+										<ul>
+											<li><i></i><a href="../02-Planteles/Reportes/R-Control de Lastre.html">Control de Lastre</a></li>
+											<li><i></i><a href="../02-Planteles/Reportes/R-Traslado Planteles.html">Traslado Planteles</a></li>
+											<li><i></i><a href="../02-Planteles/Reportes/R-Traslados a Proyectos.html">Traslados a Proyectos</a></li>
+										</ul>
+
+									</li>	
+								</ul>		
+							</li>
+
+							<li><a href="#">Asfalto</a>
+								<ul>
+									<li><i></i><a href="#">Formularios</a>
+										<ul>
+											<li><i></i><a href="../03-Asfalto/Formularios/Produccion Asfalto.html">Produccion Asfalto</a></li>
+											<li><i></i><a href="../03-Asfalto/Formularios/Consumo Emulsion.html">Consumo Emulsion</a></li>									
+										</ul>	
+									</li>
+									<li><i></i><a href="#">Reportes</a>
+										<ul>
+											<li><i></i><a href="../03-Asfalto/Reportes/R-Produccion Asfalto.html">Produccion Asfalto</a></li>
+											<li><i></i><a href="../03-Asfalto/Reportes/R-Consumo Emulsion.html">Consumo Emulsion</a></li>
+											<li><i></i><a href="../03-Asfalto/Reportes/R-Porcentajes Asfalto.html">Porcentajes Asfalto</a></li>	
+											<li><i></i><a href="../03-Asfalto/Reportes/R-Contabilidad.html">Contabilidad</a></li>									
+										</ul>	
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="#">Agregados</a>
+								<ul>
+									<li><i></i><a href="#">Formularios</a>
+										<ul>
+											<li><i></i><a href="../04-Agregados/Formularios/Produccion Agregados.html">Produccion Agregados</a></li>																	
+										</ul>
+									</li>	
+									<li><i></i><a href="#">Reportes</a>
+										<ul>
+											<li><i></i><a href="../04-Agregados/Reportes/R-Produccion Agregados.html">Produccion Agregados</a></li>									
+										</ul>
+									</li>	
+								</ul>
+							</li>
+							<li><a href="#">Concreto</a>
+								<ul>
+									<li><i></i><a href="#">Formularios</a>
+										<ul>
+											<li><i></i><a href="../05-Concreto/Formularios/Produccion Concreto.html">Produccion Concreto</a></li>
+											<li><i></i><a href="../05-Concreto/Formularios/Produccion Fabrica de Tubos.html">Produccion Fabrica de Tubos</a></li>	
+											<li><i></i><a href="../05-Concreto/Formularios/Venta y Salida Fabrica de Tubos.html">Venta y Salida Fabrica de Tubos</a></li>								
+										</ul>	
+									</li>
+									<li><i></i><a href="#">Reportes</a>
+										<ul>
+											<li><i></i><a href="../05-Concreto/Reportes/R-Produccion Concreto.html">Produccion Concreto</a></li>
+											<li><i></i><a href="../05-Concreto/Reportes/R-Produccion Fabrica de Tubos.html">Produccion Fabrica de Tubos</a></li>	
+											<li><i></i><a href="../05-Concreto/Reportes/R-Venta y Salida Fabrica de Tubos.html">Venta y Salida Fabrica de Tubos</a></li>	
+											<li><i></i><a href="../05-Concreto/Reportes/R-Stock de Tubos.html">Stock de Tubos</a></li>								
+										</ul>	
+									</li>
+								</ul>
+							</li>
+
+							<li><a href="#">Logistica</a>
+								<ul>
+									<li><i></i><a href="../06-Logistica/Formularios/Logistica.html">Solicitud de Materiales</a></li>
+									<li><i></i><a href="../06-Logistica/Reportes/R- Logistica.html">Revisión de Materiales Enviados</a></li>
+								</ul>
+							</li>
+
+							<li><a href="#"> Taller</a>
+								<ul>
+									<li><i></i><a href="../07-Taller/Reportes/R-Control-Herreramientas.html">Control de Herramientas</a></li>
+								</ul>
+							</li>
+
+							<li class="inferior"><a href="#">Configuraciones</a>
+								<ul>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Centro de Costos.html">Centro de Costos</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Kilometraje-Precios.html">Precios Kilometraje-Precios</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Lista de Precios.html">Lista de Precios</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Materiales.html">Materiales</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Registro Placas.html">Registro Placas</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Materiales.html">Reporte Placas</a></li>
+									<li><i></i><a href="../08-Configuraciones/Reportes/Terceros.html">Terceros</a></li>
+								</ul>
+							</li>	
+							
+						</ul>
+					  </div>
+					</div>
+				  </div>
+
+
+			</section>
+
+			<section>
+				<div id="contenedor_video">
+					<!-- Caspio Deployed Code Start Here || CM - Employees/Employees Report  -->
+				<iframe class= "video_1" height="500" width="700" src="https://www.youtube.com/embed/Z1D3gPpsNAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<!-- Caspio Deployed Code End Here -->
+
+				</div>
+				<!-- Smartsupp Live Chat script -->
+			<script type="text/javascript">
+				var _smartsupp = _smartsupp || {};
+				_smartsupp.key = '001144f8fb9bf88b53c4810a2a1dcd28666b06b1';
+				window.smartsupp||(function(d) {
+				  var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+				  s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+				  c.type='text/javascript';c.charset='utf-8';c.async=true;
+				  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+				})(document);
+				</script>
+
+			</section>
+
+		</main>
+		
+	
 
 
 	  	<div id="cb-footer">

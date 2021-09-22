@@ -2,7 +2,8 @@
 :root {
     --blanco:#ffffff;
     --oscuro:#212121;
-    --nav_bar: #3D82AB; 
+    --nav_bar: #4f90e6;
+	--encabezado: #156ee4;
     --gris: #757575; 
     --grisClaro: #c5cace;
 }
@@ -25,15 +26,15 @@ script{
 }
 
 .lo_top-info {
-	width:90%;
-	margin:0 auto;
-	padding-left: 10%;
+	width:100%;
 
 }
 
 .lo_bottom-strip {
 	background:  #4f90e6;
-	border-bottom:4px solid #5498f1;
+	height: 30px;
+	width: 100%;
+	padding: 8px 0px 8px 0px;
 
 
 }
@@ -48,7 +49,13 @@ script{
 	font-weight: normal;
 	text-align: center;
 }
-
+.lo_bottom-info h1 {
+	color:#fff; padding: 0px 0 0 0;
+	margin :8px;
+	font-size:20px;
+	font-weight: normal;
+	text-align: center;
+}
 
 .lo_top-info h3 {
 	color:#fff;
@@ -77,62 +84,144 @@ script{
  #links a:hover{
  	text-decoration: underline;
  }
-/* =============================== NAVBAR ========================== */
-	/*Le da formato a la pagina barra de menu*/
-#navbar {
-	height: 30px;
-	background: #3D82AB;
-	width:900px;
-	margin:0 auto;
+
+ #logo{
+	position: relative;
+	right: -100px;
+	top: 13px;
+	border-radius: 4px;
+	
+
+ }
+/*============================Menú desplegable=================*/
+
+.container{
+	
+  	padding: 0px;
+}
+
+.contenedor_menu{
+	width: 200px;
+
+}
+.card{
+  width: 200px;
+  height: 600px;
+  background-color: var(--nav_bar);
+  border-radius: 0px 0px;
+}
+
+.titulo_menu{
+  border-radius: 0px 0px 0px 0px;
+  padding: 5px;
+  background-color: var(--encabezado);
+}
+
+h3{
+  color: #FFFFFF;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+
+
+.cuerpo_menu li a{
+  transition: 1s all;
+  font-family: sans-serif;
+  font-size: 15px;
+  padding: 15px;
+  margin-left: -40px;
+  margin-top: 0px;
+  color: #fff;
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+  display: block;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  display: list-item;
+  list-style-type: none;
 
 }
 
-#navbar ul {
-	margin: 0 0 0 0px;
-	padding: 0px 0 0 0px;
-	list-style-type: none;
-}
-#navbar li {
-	margin: 0;
-	padding: 0px;
-	float: left;
-}
-#navbar .right_li{
-	float: right;
-}
-#navbar a {
-	margin: 0px;
-	padding: 7px 25px 3px;
-	text-decoration: none;
-	color: #fff;
-	display: block;
-	height: 20px;
-	font-size: 14px;
-	text-transform: uppercase;
+.cuerpo_menu ul li {
+	list-style: none;
 
 }
-* html #navbar a {
-	padding: 7px 0 3px;
-	width: 120px;
-	text-align: center;
-}
-#navbar a.selected {
-	background: #5C9DC0;
+
+li :hover{
+  transition: 1s all;
+  color: #fff;
+  background-color: #2f89fc;
+  border-top-right-radius: 10px 10px;
+  border-bottom-right-radius: 10px 10px;
+  cursor: pointer;
 }
 
-#navbar a.selected:hover {
-	background: #5C9DC0;
+.cuerpo_menu > li { 
+  float: left;
 }
 
-#navbar a:hover {
-	color: #fff;
-	background: #5C9DC0;
+.cuerpo_menu li ul {
+  background: #2f89fc;
+  margin-left: 158px;
+  margin-top: -38px;
+  display: none;
+  position: absolute;
+  border-top-right-radius: 5px 5px;
+  border-bottom-right-radius: 5px 5px;
+}
+.cuerpo_menu .inferior ul{
+	background: #2f89fc;
+	margin-left: 158px;
+	margin-top:-328px;
+	display: none;
+	position: absolute;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+  }
+
+
+
+.cuerpo_menu li ul li ul {
+	background: #2f89fc;
+	margin-left: 60px;
+	margin-top: -46px;
+	display: none;
+	position: absolute;
+	border-top-right-radius: 5px 5px;
+	border-bottom-right-radius: 5px 5px;
+	width: 80px;
+  }
+
+
+
+
+.cuerpo_menu li:hover > ul {
+  display: block;
+  cursor: pointer;
 }
 
-#parrafo {
-Color: black;
+
+
+
+.principal {
+	display: grid;
+	grid-template-columns: 200px auto;
+	column-gap: 1rem;
 
 }
+
+#contenedor_video{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+
+}
+
+
+
 
 /* =============================== CONTENT ========================== */
 	/*este contect lo usa el resto de paginas html*/
@@ -184,16 +273,12 @@ Color: black;
 	/* este contect lo usa la pagina de index */
 #contentinframe1 {
 	margin: 4px 0px 4px 0px;
-	padding: 10px;
-	
-	
+	padding: 0px;
 	box-shadow: 0px 0px 1px 0px #bbb;
-	width: 50%;
-	height: 50%;
-	margin:0 auto;
+	margin-left: 20px;
 	display: flex;
 	justify-content: center;
-	padding-top: 8%;
+	padding-top: 1%;
 }
 
 	/* este contect lo usa en menu de acarreos*/
