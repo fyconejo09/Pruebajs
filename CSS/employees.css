@@ -15,83 +15,56 @@ body {
 
 }
 
-script{
-  color: white;
+/* =============================== Formato titulos ========================== */
+h1{
+	font-size: 25px;	
+	text-align: center;
+	margin-top: 0px;
+	padding: 0px;
 }
-
-.lo_top-strip {
-	background: #373D41;
-	height:30px;
-	width: 100%;
+h2{
+	font-size: 20px;
+	text-align: center;
 }
-
-.lo_top-info {
-	width:100%;
-
-}
-
-.lo_bottom-strip {
-	background:  #4f90e6;
-	height: 30px;
-	width: 100%;
-	padding: 8px 0px 8px 0px;
-
-
-}
-
 /* =============================== HEAD ========================== */
 	/*formato a los encabezados*/
 
-.lo_top-info h1 {
-	color:#fff; padding: 0px 0 0 0;
-	margin :0;
-	font-size:25px;
-	font-weight: normal;
-	text-align: center;
-}
-.lo_bottom-info h1 {
-	color:#fff; padding: 0px 0 0 0;
-	margin :8px;
-	font-size:20px;
-	font-weight: normal;
-	text-align: center;
-}
+.barra_informacion{
+	width: 100%;
+	background-color: var(--nav_bar);
+	height: 30px;
+	align-content: center;
+	margin: 0;
+	padding: 6px 0px 6px 0px;
+}	
 
-.lo_top-info h3 {
-	color:#fff;
-	padding:1% ;
+.text_info{
+	align-items: center;
+	padding: 0px;
+	margin: 0;
+}
+.text_info h2{
+	color: var(--blanco)
+	
 
-	font-size:25px;
 }
 
-
-.lo_top-info h1 small {
-	font-size: 12px;
-	font-style: italic;
+header{
+	width: 100%;
+	height: 40px;
+	background-color: var(--oscuro);
+	margin: 0px;
+	padding: 8px 0px 8px 0px;
 }
+header h1 {
+	color: var(--blanco);
 
- #links {
-	float:right;
-	margin-top:8px;
 }
-
- #links a {
-	color: #fff;
-	text-decoration: none;
-	margin: 5px 6px 0 6px;
-}
-
- #links a:hover{
- 	text-decoration: underline;
- }
-
  #logo{
 	position: relative;
 	right: -100px;
-	top: 13px;
+	top: 3px;
 	border-radius: 4px;
-	
-
  }
 /*============================Menú desplegable=================*/
 
@@ -204,7 +177,7 @@ li :hover{
 }
 
 
-
+/* =============================== Main ========================== */
 
 .principal {
 	display: grid;
@@ -213,13 +186,19 @@ li :hover{
 
 }
 
-#contenedor_video{
+.contenedor_video{
 	display: flex;
 	justify-content: center;
 	margin-top: 20px;
+	width: 100%;
+	height: 70%;
 
 }
+.video_1{
+	width: 70%;
+	height: 100%;
 
+}
 
 
 
