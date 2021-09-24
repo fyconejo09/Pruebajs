@@ -1,13 +1,16 @@
 
 @media (max-width:768px){
 
-/*============================Head=================*/
+	/*============================Head=================*/
 
 #logo{
 	position: relative;
 	right: 0px;
-	top: 12px;
+	top: -4px;
 	border-radius: 4px;
+	width: 50px;
+	height: 50px;
+
 }
 
 .barra_informacion{
@@ -15,7 +18,11 @@
 	height: 50px;
 	
 }	
+header h1 {
+	color: var(--blanco);
+	font-size: 20px;
 
+}
 
 	/*============================Menú desplegable=================*/	
   

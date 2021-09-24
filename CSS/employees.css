@@ -45,7 +45,6 @@ h2{
 }
 .text_info h2{
 	color: var(--blanco)
-	
 
 }
 
@@ -65,6 +64,7 @@ header h1 {
 	right: -100px;
 	top: 3px;
 	border-radius: 4px;
+	
  }
 /*============================Menú desplegable=================*/
 
