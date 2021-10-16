@@ -26,12 +26,36 @@ header h1 {
 
 	/*============================Menú desplegable=================*/	
   
+	.contenedor_menu{
+		width: 150px;
+	
+	}
+	.card{
+	  width: 140px;
+	  height: 600px;
+	  background-color: var(--nav_bar);
+	  border-radius: 0px 0px;
+	}
 
+	.cuerpo_menu li ul, .cuerpo_menu .inferior ul { /*Con este modifico el primer sub menú*/
+		
+		margin-left: 100px;
+				
+	  }
+		  
+	.cuerpo_menu li ul li ul { /*Con este modifico el segundo submenu */
+		  
+		width: 60px;
+		  
+		}
+
+	/*============================Main=================*/
   .principal{
 
     display: grid;
 	grid-template-columns: auto;
 	height: auto;
+	padding-top: 118px;
   }
 
 
@@ -58,7 +82,7 @@ header h1 {
   	margin:0 auto;
   	display: flex;
   	justify-content: center;
-  	padding-top: 5%;
+  	padding-top: 125px;
   }
 
   #content1 {
